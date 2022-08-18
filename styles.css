@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: 'Times New Roman', Times, serif;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%
+  }
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: calc(100vh - 5rem);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.textInput {
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 35rem;
+  height: 35rem;
+
+  font-size: 1.25rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  font-weight: 900;
+  margin-top: 1.5rem;
+  margin-left: 1.5rem;
+  color: var(--blue-800);
+}
+
+p {
+  margin-top: 0.75rem;
+  font-style: italic;
+  font-size: 1rem;
+}
+
+button {
+  height: 4rem;
+  width: 260px;
+  border: 0;
+  border-radius: 2rem;
+  font-size: 1.25rem;
+
+  cursor: pointer;
+  transition: filter 0.2s;
+}
+
+.codifyButton {
+  background-color: #56638A;
+  color: #FFF;
+
+  margin-top: 1rem;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.decodifyButton {
+  border-style: solid;
+  border-color: #56638A;
+  border-width: 0.1rem;
+  background-color: #FFF;
+
+  margin-left: 2rem;
+
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+}
+
+.codifyButton:hover {
+  filter: brightness(0.8);
+}
+
+.decodifyButton:hover {
+  filter: brightness(0.8);
+}
+
+.resultText {
+  margin-left: 3rem;
+  align-items: center;
+  justify-content: center;
+  width: 25rem;
+  height: 42.5rem;
+
+  border-style: solid;
+  border-color: #56638A;
+  border-width: 0.1rem;
+  border-radius: 1.5rem;
+
+  font-size: 1.25rem;
+  padding: 1rem;
+}
